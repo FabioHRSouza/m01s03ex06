@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        align-content: center;
+        color: aliceblue;
+        padding: 15px;
+    
+    }
+    h1{
+        font-size: 85px;
+        margin-left: 55px;
+        color: red;
+    }
+    h2{
+        font-size: 45px;
+        margin-left: 55px;
+        color: blue;
+    }
+
+    p{
+        font-size: 35px ;
+        margin-left: 55px;
+    }
+    #comparar{
+        margin: 55px;
+        font-size: 25px;     
+    }
+   
+    
+    </style>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <h1> Modulo01 - Semana03 - Exercício 06 </h1>
+            <h2>Comparação entre 2 numeros inteiros</h2>
+            <p>Inicie a Comparação!</p><br>
+            
+            <button onclick="maiorNumero()" id="comparar" >Comparar</button>
+            
+            
+        </section>
+    </main>
+    <script>
+        const submeter = document.getElementById("comparar").click;
+        event.preventDefault();
+        function maiorNumero(){
+            let number1 = prompt("Digite o 1º número:");
+            let number2 = prompt("Digite o 2º número:");
+            if (number1 == number2){
+                alert ("Numeros Iguais - Por Favor informe um numeros diferentes ");
+                            
+            }else if (number1 > number2) {
+                alert("O numero Maior é : " + number1);
+            }else{
+                alert(" O número maior é : " + number2)
+            }
+        }
+     
+    </script>
+</body>
+</html>
+
